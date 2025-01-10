@@ -10,7 +10,7 @@ node{
 	} 
 	
 	stage('Test image') {
-		docker.image ('yvain/nginx').withRun('-p 8081:80') { c ->
+		docker.image ('yvain/nginx').withRun('-p 80:80') { c ->
 		
 		sh 'docker ps'
 		
